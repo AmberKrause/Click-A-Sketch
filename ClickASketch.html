@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+    Amber Krause
+	April 20, 2016
+    CISC 131
+
+    HTML document for assignment due April 25, 2016. This assignment
+    creates a sketch area with customizable drawing and canvas colors.
+-->
+<html lang="en">
+<head>
+<title>Click-A-Sketch</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="ClickASketch.js" type="text/javascript"></script>
+<style type="text/css">
+* {border: 0; margin: 0; padding: 0;}
+
+body {font-family: "Times New Roman", serif; font-size: 12pt;}
+
+.box
+{
+ border    : 2px solid black;
+ height    : 3em;
+ margin    : auto;
+ margin-top: .6em;
+ width     : 3em;
+}
+
+.littleBox
+{
+ float : left;
+ height: .5em;
+ width : .5em;
+}
+
+.littleBoxNewRow
+{
+ clear: left;
+ float: left;
+}
+
+#page
+{
+ height    : 25em;
+ margin    : auto;
+ margin-top: 5em;
+ width     : 34em;
+}
+
+#header
+{
+ float    : left;
+ font-size: 2em;
+}
+
+#drawingColorPalette
+{
+ clear : left;
+ float : left;
+ height: 20em;
+ width : 4em;
+}
+
+#drawingArea
+{
+ border: .5em ridge black;
+ float : left;
+ height: 20em;
+ width : 25em;
+}
+
+#canvasColorPalette
+{
+ float : left;
+ height: 20em;
+ width : 4em;
+}
+
+#currentColor
+{
+ bottom  : .3em;
+ float   : left;
+ height  : 1.8em;
+ left    : .5em;
+ position: relative;
+ width   : 1.8em;
+}
+</style>
+</head>
+<body>
+ <div id="page">
+  <div id="header"><div>Click-A-Sketch</div></div>
+  <div id="currentColor" class="box"></div>
+  <div id="drawingColorPalette"></div>
+  <div id="drawingArea"></div>
+  <div id="canvasColorPalette"></div>
+ </div>
+</body>
+</html>
